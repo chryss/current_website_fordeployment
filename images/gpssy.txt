@@ -1,0 +1,170 @@
+ 
+                  UNITED STATES NAVAL OBSERVATORY (USNO)
+  
+
+                         GPS SYSTEM DESCRIPTION
+  
+****************************************************************************  
+  
+GLOBAL POSITIONING SYSTEM INFORMATION
+=====================================
+The following Global Positioning System (GPS) information is obtained
+from the 2005 Federal Radionavigation Plan (FRP), prepared jointly by
+the Department of Defense (DoD) and the Department of Transportation
+(DoT) and other sources such as conferences, meetings and seminars.
+  
+The GPS is a DoD developed, worldwide, satellite-based radionavigation
+system that will be the DoD's primary radionavigation system well into
+the next century.  The constellation currently consists of 32 operational 
+satellites.  The U.S. Air Force Space Command (AFSC) formally declared the 
+GPS satellite constellation as having met the requirement for full operational
+capability (FOC) as of April 27, 1995.  Requirements include:  24 operational
+satellites (Block II/IIA/IIR) functioning in their assigned orbits and
+successful testing completed for operational military functionality.
+ 
+Prior to GPS FOC, an Initial Operational Capability (IOC) was declared on
+December 8, 1993 when 24 GPS satellites (Block I/II/IIA) were operating
+in their assigned orbits, available for navigation use and providing the
+Standard Positioning Service (SPS) levels specified below.
+  
+
+TWO LEVELS OF SERVICE
+=====================  
+The Standard Positioning Service (SPS) is a positioning and timing service
+which will be available to all GPS users on a continuous, worldwide basis
+with no direct charge.  SPS will be provided on the GPS L1 frequency which
+contains a coarse acquisition (C/A) code and a navigation data message.
+SPS provides a predictable positioning accuracy of 13 meters (95 percent)
+horizontally and 22 meters (95 percent) vertically and time transfer
+accuracy to UTC within 40 nanoseconds (95 percent).
+  
+The Precise Positioning Service (PPS) is a highly accurate military
+positioning, velocity and timing service which is available on a worldwide 
+basis only to users authorized by the U.S.  PPS data is transmitted on GPS 
+via the P(y) code on both L1 and L2 frequencies.  PPS was designed primarily 
+for U.S. military use.  It will be denied to unauthorized users by the use of 
+cryptography.  PPS is made available to U.S. military and Federal agencies,
+and to selected allied militaries and governments.  
+  
+For questions regarding GPS policy, the user is advised to refer to the
+regularly appearing Federal Radionavigation Plan (FRP).  
+The FRP is published every 2-4 years and is available from the 
+National Technical Information Service, Springfield, VA 22161.  
+The latest report number is DOT-VNTSC-RITA-08-02 for report date 2008.
+  
+  
+GPS SIGNAL CHARACTERISTICS
+==========================
+The satellites transmit on two L-band frequencies:  L1 = 1575.42 MHz and
+L2 = 1227.6 MHz.  Three pseudo-random noise (PRN) ranging codes are in use.
+The coarse/acquisition (C/A) code has a 1.023 MHz chip rate, a period of
+one millisecond (MS) and is used primarily to acquire the P-code.  The
+precision (P) code has a 10.23 MHz rate, a period of seven days and is the
+principle navigation ranging code.  The Y-code is used in place of the
+P-code whenever the anti-spoofing (A-S) mode of operation is activated.
+The C/A code is available on the L1 frequency and the P-code is available
+on both L1 and L2.  The various satellites all transmit on the same
+frequencies, L1 and L2, but with individual code assignments.  Due to the
+spread spectrum characteristic of the signals, the system provides a large
+margin of resistance to interference.  Each satellite transmits a
+navigation message containing its orbital elements, clock behavior, system
+time and status messages.  In addition, an almanac is also provided which
+gives the approximate data for each active satellite.  This allows the
+user set to find all satellites once the first has been acquired.
+
+Future coded civil signals include a second signal L2C at the L2 frequency 
+and a third for safety-of-life applications L5 at 1176.45 MHz. There is
+also an M code for military use to be broadcasted on L1 and L2.
+  
+  
+SELECTIVE AVAILABILITY, ANTI-SPOOFING
+=====================================
+Selective Availability (SA), the denial of full accuracy, is accomplished
+by manipulating navigation message orbit data (epsilon) and/or satellite
+clock frequency (dither).  Anti-spoofing (A-S) guards against fake
+transmissions of satellite data by encrypting the P-code to form the Y-code.
+  
+SA was implemented on Block II and was activated July 4, 1991 at 0400 UT 
+(ref:  Notice Advisory to NAVSTAR Users 121-92282 DTG 011354Z JUL 91).  
+A-S was exercised intermittently through 1993 and implemented
+on January 31, 1994 (ref:  Notice Advisory to NAVSTAR Users 050-94042,
+DTG 112054Z FEB 94). 
+
+SA was permanently deactivated on May 2, 2000.  
+  
+  
+GPS SYSTEM SEGMENTS
+===================
+The GPS consists of three major segments:  SPACE, CONTROL and USER.
+  
+The SPACE segment, consists of of 31 operational satellites in six
+orbital planes.  The satellites operate in circular 20,200 km (10,900 nm) 
+orbits at an inclination angle of 55 degrees and with a 12-hour period.  
+The position is therefore the same at the same sidereal time each day, 
+i.e. the satellites appear four minutes earlier each day.
+ 
+The CONTROL segment consists of twelve Monitor Stations (Hawaii, Kwajalein,
+Ascension Island, Diego Garcia, Colorado Springs, Washington DC, Ecuador, 
+Argentina, England, Bahrain, Australia), four Ground Antennas
+(Ascension Island, Diego Garcia, Kwajalein, Cape Canaveral), and a Master 
+Control Station (MCS) located at Schriever (formerly Falcon) AFB in Colorado.
+The monitor stations passively track all satellites in view, accumulating 
+ranging data.  This information is processed at the MCS to determine 
+satellite orbits and to update each satellite's navigation message.  Updated
+information is transmitted to each satellite via the Ground Antennas.  The 
+Monitor Station coordinates have been precisely surveyed with respect to the 
+World Geodetic System 1972, otherwise referred to as WGS-72.  The new 
+standard is the WGS-84 and the transition took place on January 10, 1987.
+  
+The USER segment consists of antennas and receiver-processors that provide
+positioning, velocity and precise timing to the user.
+  
+  
+GPS SYSTEM TIME
+===============
+GPS system time is given by its Composite Clock (CC), that was implemented
+on June 17, 1990 at 0000 UT.  The CC or "paper" clock consists of all
+operational Monitor Station and satellite frequency standards.  GPS system
+time, in turn, is referenced to the Master Clock (MC) at the USNO and
+steered to UTC(USNO) from which system time will not deviate by more than
+one microsecond.  The exact difference is contained in the navigation message
+in the form of two constants, A0 and A1, giving the time difference and rate
+of system time against UTC(USNO,MC).  UTC(USNO) itself is kept very close to
+the international benchmark UTC as maintained by the BIPM.
+  
+  
+GPS TIME TRANSFER
+=================
+GPS is at the present time the most competent system for the distribution
+of Precise Time and Time Interval (PTTI).  The system uses time of arrival
+(TOA) measurements for the determination of user position.  A precisely
+timed clock is not essential for the user because time is obtained in
+addition to position by the measurement of TOA of FOUR satellites
+simultaneously in view.  If altitude is known (e.g. for a surface user),
+then THREE satellites are sufficient.  If time is being kept by a stable
+clock (say, since the last complete coverage), then TWO satellites in view
+are sufficient for a fix at known altitude.  If the user is, in addition,
+stationary or has a known speed then, in principle, the position can be
+obtained by the observation of a complete pass of a SINGLE satellite. This
+could be called the "transit" mode, because the old TRANSIT system uses
+this method.  In the case of GPS, however, the apparent motion of the
+satellite is much slower, requiring much more stability of the user clock.
+  
+  
+CURRENT GPS CONSTELLATION (BLOCK II/IIA/IIR/IIR-M)
+==================================================
+The current GPS constellation consists of 31 Block II/IIA/IIR/IIR-M satellites.
+The first Block II satellite was launched in February 1989.
+  
+  
+  
+For information concerning:  CURRENT STATUS  see file . . . . . . . GPSTD
+                             TIME TRANSFER   see file . . . . . . . GPSTT
+                             BLOCK I         see file . . . . . . . GPSB1
+                             BLOCK II        see file . . . . . . . GPSB2
+  
+
+--
+File  GPSSY
+last updated
+Thu Aug 20 18:22:50 UTC 2009
